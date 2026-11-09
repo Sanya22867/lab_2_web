@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <button id="theme-toggle">Перемкнути тему</button>
+    </header>
+
+    <main>
+        <h2>Коментарі роботодавців</h2>
+        <div id="comments-container"></div>
+    </main>
+
+    <!-- Модальне вікно -->
+    <div id="feedback-modal" class="modal">
+        <div class="modal-content">
+            <button id="close-modal">Закрити</button>
+            <h3>Форма зворотного зв'язку</h3>
+            <form action="https://formspree.io/f/xzeegonl" method="POST">
+                <label>Ім'я: <input type="text" name="name" required></label>
+                <label>Email: <input type="email" name="email" required></label>
+                <label>Номер телефону: <input type="tel" name="phone" required></label>
+                <label>Повідомлення: <textarea name="message" required></textarea></label>
+                <button type="submit">Надіслати</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p id="footer-info"></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
