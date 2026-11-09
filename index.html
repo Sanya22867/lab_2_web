@@ -4,52 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV - Олександр Бекеша</title>
+
+    <!-- 2) Внутрішнє (internal) підключення стилів: кілька загальних правил -->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Trebuchet MS', 'Segoe UI', sans-serif;
+        }
+    </style>
+
+    <!-- 3) Зовнішнє (external) підключення стилів: основна частина правил -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Олександр Бекеша</h1>
-        <p>Студент спеціальності "Кібербезпека" | Початківець-розробник</p>
+    <header id="site-header">
+        <h1>ОЛЕКСАНДР БЕКЕША</h1>
+        <p>Студент спеціальності «Кібербезпека»</p>
     </header>
 
     <main>
-        <section>
-            <h2>Контактна інформація</h2>
+        <section class="section section--info">
+            <h2>Особиста інформація</h2>
             <ul>
-                <li>Email: <a href="mailto:oleksandr.bekesha@example.com">oleksandr.bekesha@example.com</a></li>
                 <li>Місто: Львів</li>
+                <li>E-mail: <a href="mailto:oleksandr.bekesha@example.com">oleksandr.bekesha@example.com</a></li>
             </ul>
         </section>
 
-        <section>
+        <section class="section section--about">
+            <h2>Про себе</h2>
+            <p>Студент 2 курсу Національного університету «Львівська політехніка» за спеціальністю «Кібербезпека». Цікавлюся інформаційною безпекою, програмуванням та захистом комп'ютерних мереж. Під час навчання здобуваю практичні навички у сфері вебпрограмування, криптографії та роботи з базами даних. Вивчаю Python та C#, працюю у Visual Studio, PyCharm і VS Code, а також знайомлюся з налаштуванням мережевого обладнання (Cisco). Прагну розвивати технічні навички та здобувати практичний досвід у сфері ІТ.</p>
+        </section>
+
+        <section class="section section--education">
             <h2>Освіта</h2>
             <ul>
-                <li><strong>Національний університет "Львівська політехніка"</strong> — Спеціальність "Кібербезпека" (2025 - дотепер)</li>
-                <li><strong>Острозький військовий ліцей</strong> (10-11 класи)</li>
-                <li><strong>Мізоцький НВК</strong></li>
+                <li><strong>Національний університет «Львівська політехніка»</strong> — Спеціальність: Кібербезпека (Курс: 2)</li>
+                <li><strong>Острозький військовий ліцей з посиленою військово-фізичною підготовкою</strong> (2022–2024)</li>
+                <li><strong>Мізоцький НВК</strong> (2013–2022)</li>
             </ul>
         </section>
 
-        <section>
-            <h2>Навички та інструменти</h2>
-            <ul>
-                <li><strong>Мови програмування:</strong> Python, C#</li>
-                <li><strong>Інструменти розробки:</strong> Visual Studio, PyCharm, Git</li>
-                <li><strong>Технології:</strong> HTML, розробка GUI (tkinter), робота з СУІБ (ISO 27001:2022)</li>
+        <section class="section section--skills">
+            <h2>Професійні навички</h2>
+            <ul class="skills-list">
+                <li>Основи програмування на Python та C#</li>
+                <li>Основи HTML та вебпрограмування</li>
+                <li>Робота в середовищах Visual Studio, PyCharm, VS Code</li>
+                <li>Проєктування баз даних та робота з Git</li>
+                <li>Основи інформаційної безпеки (стандарти ISO 27001) та налаштування мереж</li>
             </ul>
         </section>
 
-        <section>
-            <h2>Практичний досвід та проєкти</h2>
-            <ul>
-                <li>Розробка застосунків мовами Python та C# з використанням об'єктно-орієнтованого підходу.</li>
-                <li>Створення документації з кібербезпеки та формування планів обробки ризиків.</li>
-                <li>Налаштування мережевого обладнання та діагностика WAN-мереж.</li>
-            </ul>
+        <section class="section section--experience">
+            <h2>Досвід роботи</h2>
+            <p>Комерційного досвіду роботи поки що немає. Здобуваю практичні навички під час виконання навчальних проєктів: розробка програм з об'єктно-орієнтованим підходом, реалізація алгоритмів шифрування, створення документації з кібербезпеки та діагностика WAN-мереж.</p>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Олександр Бекеша. Створено для лабораторної роботи №2.</p>
+        <!-- 1) Вбудоване (inline) підключення стилю -->
+        <p style="margin: 0; font-size: 0.875rem; color: #64748b;">&copy; 2026 Олександр Бекеша</p>
     </footer>
 </body>
 </html>
